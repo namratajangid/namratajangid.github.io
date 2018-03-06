@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> &#x2661; Save Our Strays</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">  
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100i,900i" rel="stylesheet"> 
+	  
+
+
+	  <style type="text/css">
+	  @import url('https://fonts.googleapis.com/css?family=Comfortaa|Courgette');
+	  
+		#mainNav {
+		  background-color: #212121;
+		}
+
+		#mainNav .navbar-brand {
+		  color: white;
+		  font-size: 20px;
+		}
+
+		#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+		  color: #00B8D4;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link {
+		  font-size: 18px;
+		  font-weight: 400;
+		  padding: 0.75em;
+		  letter-spacing: 1px;
+		  color: white;
+		  font-family: 'Comfortaa', cursive;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link.active{
+		  color: #00B8D4;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link:hover
+		{
+			background-color: #00B8D4;
+			color: white;
+		}
+		.carousel-caption{
+			font-size: 15px; 
+			font-weight: 200;
+			color: white;
+			text-align: center;
+			top: 50%;
+			font-family: 'Courgette', cursive;
+		}
+		@media only screen and (min-width: 768px) {
+    	/* For desktop: */
+    	.carousel-caption{
+			font-size: 30px;
+			font-weight: 400;
+			color: white;
+			text-align: center;
+			top: 50%;
+			font-family: 'Courgette', cursive;
+		}
+		}
+		#introSection
+		{
+			background-color: #00B8D4;
+
+		}
+		
+		#introSection .section-heading
+		{
+			color: #212121;
+			font-size: 30px;
+			font-weight: bold;
+			
+		}
+
+		#introSection .section-subheading
+		{
+			color: white;
+			font-size: 25px;
+			text-transform: uppercase;
+			font-family: 'Comfortaa', cursive;
+		}
+
+		#introSection .subsection-heading
+		{
+			color: #212121;
+			font-size: 20px;
+			font-family: 'Comfortaa', cursive;
+		}
+
+		.card
+		{
+			color: #212121;
+			font-size: 15px;
+			font-family: 'Comfortaa', cursive;
+			
+
+		}
+		.card-block{
+			padding: 0.25em;
+		}
+		@media only screen and (max-width: 768px) {
+    	/* For desktop: */
+    	.card{
+    			height: 40px;
+    			color: #212121;
+				font-size: 80%;
+				font-family: 'Comfortaa', cursive;
+    		}
+    	.col-md-3
+    	{
+    		padding: 0.25em;
+    	}	
+		}
+
+		.navbar-toggler-icon
+        {
+        	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#00B8D4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        .navbar-toggler
+        {
+        	border-color: white;
+        }
+
+        #contactSection
+        {
+        	background-color: white;
+
+        }
+        #contactSection .section-heading
+		{
+			color: #212121;
+			font-size: 30px;
+			font-weight: bold;
+			
+		}
+
+		#contactSection .section-subheading
+		{
+			color: #00B8D4;
+			font-size: 20px;
+			
+			font-family: 'Comfortaa', cursive;
+		}
+		#contactSection .text
+		{
+			color: #212121;
+			font-size: 18px;
+			font-family: 'Comfortaa', cursive;
+		}
+
+      	
+        #footer{
+        	background-color: #212121;
+        	padding: 3px;
+  			text-align: center;
+        	font-size: 90%;
+		    line-height: 40px;
+		    text-transform: none;
+		    font-family: 'Comfortaa', cursive;
+			letter-spacing: 1px;
+			color: white;
+			
+        }
+        #footer ul.quicklinks {
+		  font-size: 90%;
+		  line-height: 40px;
+		  margin-bottom: 0;
+		  text-transform: none;
+		  font-family: 'Comfortaa', cursive;
+		  color: white;
+		}
+
+		ul.social-buttons {
+		  margin-bottom: 0;
+		}
+
+		ul.social-buttons li a {
+		  font-size: 20px;
+		  line-height: 40px;
+		  display: block;
+		  width: 40px;
+		  height: 40px;
+		  -webkit-transition: all 0.3s;
+		  -moz-transition: all 0.3s;
+		  transition: all 0.3s;
+		  color: #212121;
+		  border-radius: 100%;
+		  outline: none;
+		  background-color: white;
+		}
+
+		ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+		  background-color: #00B8D4;
+		}
+        </style>
+</head>
+<body>
+	<!--Navigation Bar PERFECT-->
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+	<a class="navbar-brand" href="#">S&#x2661;S | Save Our Strays</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				    <li class="nav-item">
+				      <a class="nav-link active" href="#">About</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Gallery</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Projects</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Testimonials</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Get involved</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Contact</a>
+				    </li>
+  				</ul>
+		</div>
+	</nav>
+
+	<!--Carousel PERFECT-->
+			
+		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+	
+		<ol class="carousel-indicators">
+	    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+	  </ol>
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="img1.jpg" alt="img1">
+		    <div class="carousel-caption">
+			    <p>"Until one has loved an animal a part of one's soul remains unawakened"<p>
+			    <p>-Anatole France</p>
+	  		</div>
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="img2.jpeg" alt="img2">
+	      <div class="carousel-caption">
+			    <p>"An animal's eyes have the power to speak a great language"<p>
+			    <p>-Martin Buber</p>
+	  		</div>
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="img4.jpeg" alt="img3">
+	      <div class="carousel-caption">
+			    <p>"When you look into the eyes of an animal you've rescued, you can't help but fall in love"<p>
+			    <p >-Paul Shaffer</p>
+	  		</div>
+	    </div>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	
+	</div>
+	
+
+	<!--Introduction PERFECT-->
+	<section id="introSection">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<br>
+					<center>
+						<p class="section-heading">Welcome to 'Save Our Strays'</p>
+		            	<p class="section-subheading">Our Causes</p>
+					</center>
+		        </div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-md-3">
+					<p class="subsection-heading">Adoption</p>		
+					<div class="card">
+					  <div class="card-block">
+					  	<div class="card-text">
+					  		Finding happy homes for animals in need
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<p class="subsection-heading">Vaccination</p>
+					<div class="card">
+					  <div class="card-block">
+					  	<div class="card-text">
+					  		Conducting vaccination drives around the city
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<p class="subsection-heading">Sterilization</p>
+					<div class="card">
+					  <div class="card-block">
+					  	<div class="card-text">
+					  		Keeping population of stray animals under control
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<p class="subsection-heading">First Aid</p>
+					<div class="card">
+					  <div class="card-block">
+					  	<div class="card-text">
+					  		Providing first aid care to animals in distress
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<br>
+		</div>
+	</section>
+
+	<!--Contact Us-->
+	<section id="contactSection">
+		<div class="container-fluid">
+			<div class="row text-center">
+				<div class="col-lg-12 text-center">
+					<br>
+					<center>
+						<p class="section-heading">Reach Us</p>
+					</center>
+		        </div>
+			</div>
+
+			<div class="row text-center">
+				<div class="col-md-4">
+					<p class="section-subheading">Contact</p>	
+					<p class="text">+919820141310</p>
+					<p class="text"> (9 AM to 6 PM Mon - Sat) </p>
+					<p class="text">saveourstraysmum@gmail.com</p>	
+				</div>
+				<div class="col-md-4">
+					<p class="section-subheading">Address</p>	
+					<p class="text">Save Our Strays, 26/101, Garden View Building, Opp.Deep Towers, Off New Link Road, Oshiwara, Andheri (W), Mumbai 400053, India</p>			
+				</div>
+				<div class="col-md-4">
+					<p class="section-subheading">Location</p>
+					<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.41131422995!2d72.82547131490212!3d19.136324587053327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b61874cbfe41%3A0x801a84d107856b0f!2sSave+Our+Strays!5e0!3m2!1sen!2sin!4v1520363323109" width="200" height="200" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</section>
+
+   <!--Footer-->
+	<footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; S&#x2661;S 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                Designed by NamrataJ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer> 
+
+</body>
+</html>
