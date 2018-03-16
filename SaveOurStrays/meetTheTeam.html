@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> &#x2661; Save Our Strays</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">  
+	  <link href="https://fonts.googleapis.com/css?family=Lato:100i,900i" rel="stylesheet"> 
+	  
+	  <style type="text/css">
+	  	@import url('https://fonts.googleapis.com/css?family=Comfortaa|Courgette');
+	  
+		#mainNav {
+		  background-color: #212121;
+		}
+
+		#mainNav .navbar-brand {
+		  color: white;
+		  font-size: 20px;
+		}
+
+		#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+		  color: #00B8D4;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link {
+		  font-size: 18px;
+		  font-weight: 400;
+		  padding: 0.75em;
+		  letter-spacing: 1px;
+		  color: white;
+		  font-family: 'Comfortaa', cursive;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link.active{
+		  color: #00B8D4;
+		}
+
+		#mainNav .navbar-nav  .nav-item .nav-link:hover
+		{
+			background-color: #00B8D4;
+			color: white;
+		}
+				.navbar-toggler-icon
+        {
+        	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#00B8D4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        .navbar-toggler
+        {
+        	border-color: white;
+        }
+        body
+        {
+        	padding-top: 50px;.
+        	padding-bottom: 50px;
+		}
+
+		#introSection{
+			background-color: #00B8D4; 
+		}
+		#introSection .section-heading{
+			background-color: #00B8D4;
+			color: #212121;
+			font-size: 30px;
+			font-weight: bold 
+		}
+		#introSection .section-subheading{
+			background-color: #00B8D4;
+			color: #212121;
+			font-size: 25px; 
+		}
+		
+		#teamSection
+		{
+			background-color: white;
+
+		}
+		#teamSection .section-heading
+		{
+			color: #212121;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		#teamSection .section-subheading
+		{
+			color: #212121;
+			font-size: 25px;
+		}
+
+		#teamSection .profile-heading
+		{
+			color: #00B8D4;
+			font-size: 18px;
+			font-family: 'Comfortaa', cursive;
+		}
+		#teamSection .profile-subheading
+		{
+			color: #212121;
+			font-size: 16px;
+			font-family: 'Comfortaa', cursive;
+		}
+		#teamSection .text
+		{
+			color: #212121;
+			font-size: 15px;
+			font-family: 'Comfortaa', cursive;
+		}
+		
+	  </style>
+
+</head>
+<body>
+	<!--Navigation Bar PERFECT-->
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+	<a class="navbar-brand" href="index.html">S&#x2661;S | Save Our Strays</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				    <li class="nav-item">
+				      <a class="nav-link" href="index.html">About</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link active" href="meetTheTeam.html">Meet the Team</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Gallery</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Projects</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Testimonials</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="getInvolved.html">Get involved</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Contact</a>
+				    </li>
+  				</ul>
+		</div>
+	</nav>
+
+	<!--introSection-->
+	<!--<section id="introSection">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+						<br><br>
+						<h1 class="text">Save Our Strays is an animal welfare NGO based in Mumbai. We have completed 14 operational years in 2018. SOS was registered in the year 2004 due to combined efforts of like-minded citizens determined to safeguard animals.At present, Save Our Strays has animal welfare prgrams coonducted all around the city.</h1>
+						<br>
+						<center><h1 class="section-heading">Success Stats</h1></center>	
+						<br>
+		        </div>
+			</div>
+			<div class="row text-center">
+				<div class="col-lg-12">
+					<img src="graph.jpg"></img>
+				</div>
+			</div>
+			<br><br>
+		</div>
+	</section>-->
+	<!--Intro section-->
+	<section id="introSection">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-lg-12">
+          	<br>
+            <h1 class="section-heading">The Team</h1>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-lg-12">
+            <h1 class="section-subheading">Our Team comprises of people coming from various facets of life, all brought togther by the love of animals. We are a dedicated group of 11 trustees, 3 panel volunteers and 2 ambulance drivers.</h1><br>
+          </div>
+        </div>
+    </section>	
+
+	<!--teamSection-->
+    <section id="teamSection">
+      <div class="container">
+      	<div class="row text-center">
+      		<div class="col-lg-12">
+      			<br>
+            <h1 class="section-heading">SOS Trustees</h1><br>
+          </div>
+      	</div>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="shirley.jpg" alt="">
+              	<h1 class="profile-heading">Shirley Advani(Menon)</h1>
+              	<p class="text">She comes from a animal loving middle class family, with a background in the service industry, but she quit her full time job to dedicate more time to SOS. Her aim in life is to see animals and humans living in harmony the world. She believes that most people may not be able to change the world, but she beleives that each one of us can make a difference in our lifetime</p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Namrata.jpeg" alt="">
+              	<h1 class="profile-heading">Namrata Kamat</h1>
+              	<p class="text">A housewife who lives with her family, 1 cat and 2 dogs. She has a magical touch with animals and strangely she talks to them in Konkani which they understand.</p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Poonam.jpeg" alt="">
+              	<h1 class="profile-heading">Poonam Franco</h1>
+              	<p class="text">A housewife who lives with her husband and keeps herself busy with spiritualism and social work. .</p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Pushpajeet.gif" alt="">
+              	<h1 class="profile-heading">Pushpajeet Srivastava</h1>
+              	<p class="text">A housewife who lives with her husband and has a large extended family of strays under her building who she has been diligently caring for over the years.</p>
+          </div>
+      	</div>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Reena.gif" alt="">
+              	<h1 class="profile-heading">Reena I Puri</h1>
+              	<p class="text">She cannot remember ever having lived without animals. Her childhood home was a zoo with hens, ducks, goats, cows, and of course scores of dogs and cats. As an adult in Mumbai, the city showed her a world where stray animals needed every ounce of wit and sinew to survive. She moved to Bangalore in 2006, where she writes about animals for children and hopes to write a book on wildlife rescues. </p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Suchitra.gif" alt="">
+              	<h1 class="profile-heading">Suchitra Abdi</h1>
+              	<p class="text">A librarian by background who lives with her animal loving husband, daughter,a dog and a cat. She is compassionate to the core and cares for the animals regularly around her home and workplace.</p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	    <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Shalina.gif" alt="">
+              	<h1 class="profile-heading">Shalina Mamtani</h1>
+              	<p class="text">She has a business background and lives with her husband,son and Tipsy, their pet. She has been extremely instrumental in streamlining the operations at SOS and giving it a more concrete framework.</p>
+      		</div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Suchitra.gif" alt="">
+              	<h1 class="profile-heading">Geeta Paintala</h1>
+              	<p class="text">"The mother of all animals" is what she is called by all who know her. Lives with her husband, two lovely children who are all compassion and dedication personified. They also have 4 lovely dogs which complete this animal loving family. </p>	
+
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Inaara.gif" alt="">
+              	<h1 class="profile-heading">Inara Ali</h1>
+              	<p class="text">Wishfully resigned herself to an unequivocal commitment, best explained by Robert L. Frost: The woods are lovely, dark and deep, But I have promises to keep, And miles to go before I sleep " This is Inara in a nutshell for you dedicated to looking after strays, abused and abandoned dogs covering her specifically huge locality and vicinity. She moved to USA in 2008, is a home maker, and lives with her husband and daughter. </p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Amit.gif" alt="">
+              	<h1 class="profile-heading">Amit Gajaria</h1>
+              	<p class="text">A chemical engineer by profession and running his family business has been an ardent animal lover since childhood, but it was only through SOS that he could spread his wings far and wide in the animal work and he could get closer to the animals, fight for their rights and get medical assistance wherever needed. He lives with his family and his pet, Lisa who undoubtedly is the apple of their eye and Amit calls Lisa, his little sister. </p>	
+          </div>
+      	</div>
+      	<br>
+      	<div class="row text-center">
+      	  <div class="col-md-12">
+      			<!--image--><img class="mx-auto rounded-circle" src="Rinky.gif" alt="">
+              	<h1 class="profile-heading">Rinky Karmarkar</h1>
+              	<p class="text">Somehow animals in distress have a knack of coming and standing in from of her eyes waiting to be helped and rescued. She is amazingly emotional about what she does and passionately goes about doing her work. She sterilizes, vaccinates, feeds, rescues, fosters and provides first aid to strays in distress in her locality. </p>	
+          </div>
+      	</div>
+    </section>
+
+    
+
+
+
+</body>
+</html>
