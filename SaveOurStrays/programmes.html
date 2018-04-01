@@ -2,15 +2,16 @@
 <html>
 <head>
 	<title> &#x2661; Save Our Strays - Programmes</title>
-	<meta charset="utf-8">
+	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
-
+	  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	  <style type="text/css">
+
 	  	@import url('https://fonts.googleapis.com/css?family=Comfortaa|Courgette');
 	  
 		body
@@ -28,7 +29,7 @@
 		}
 
 		#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-		  color: #00B8D4;
+		  color: #FFC107;
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link {
@@ -41,17 +42,17 @@
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link.active{
-		  color: #00B8D4;
+		  color: #FFC107;
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link:hover
 		{
-			background-color: #00B8D4;
+			background-color: #FFC107;
 			color: #212121;
 		}
 		.navbar-toggler-icon
         {
-        	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#00B8D4' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        	 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
         .navbar-toggler
         {
@@ -59,11 +60,11 @@
         }
         #foodPoolSection, #batheADogSection
         {
-        	background-color: #ffffff
+        	background-color: #FFC107
         }
         #foodPoolSection .sectionHeading, #batheADogSection .sectionHeading
         {
-        	color: #00B8D4;
+        	color: white;
 			font-size: 26px;
 			font-weight: bold;
 			/*font-family: 'Comfortaa', cursive;*/
@@ -88,11 +89,11 @@
         }
         #animalStaySection, #tnrSection
         {
-        	background-color:#00B8D4;
+        	background-color: white;
         }
         #animalStaySection .sectionHeading, #tnrSection .sectionHeading
         {
-        	color: white;
+        	color: #FFC107;
 			font-size: 26px;
 			font-weight: bold;
 			padding-left: 50px;
@@ -155,7 +156,7 @@
 		}
 
 		 ul.social-buttons li a:hover {
-		  background-color: #00B8D4;
+		  background-color: #FFC107;
 		}
     </style>
 
@@ -173,24 +174,24 @@
 				      <a class="nav-link" href="index.html">About</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="#">Meet the Team</a>
+				      <a class="nav-link" href="impact.html">Impact</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link active" href="#">Programmes</a>
+				      <a class="nav-link active" href="programmes.html">Programmes</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="#">Get involved</a>
+				      <a class="nav-link" href="getInvolved.html">Get involved</a>
 				    </li>
   				</ul>
 		</div>
 	</nav>
 
 	<!--Project 1-->
-	<section id="foodPoolSection" class="fullscreen">
+	<section id="foodPoolSection">
 		<div class="cotainer-fluid">
 			<br><br>
 			<h1 class="sectionHeading text-center">The Food Pool Programme</h1><br>
-			<h1 class="sectionSubheading text-center">SOS started this programme in July 2009 primarily to help dogs and cats who needed extra care and nutrition to recover from some life threatening conditions that they were in. Isolated dogs suffer from deadly diseases, but with proper care and nutrition they stand a good chance of survival. This programme was brilliantly put together by our volunteer, Amit Gajaria.<br><br>Initially, every volunteer was allotted one day of the week and that's how we started feeding about 20 animals on an everyday basis. Then, there was no looking back, the word spread and donations started pouring in, from 20, we went to 30 and today we feed around 60 animals who are suffering from various ailments like maggot wounds, fractures , jaundice, skin infections, etc. This would never have been possible without the cooperation of the hospital authorities. The results were soon to follow, more and more dogs started recovering and going back to where they came from. The medication by the doctors there, followed by the nutritious food given by us helped the dogs recover faster. The sincere efforts by the donors and volunteers was rewarded when the first isolated dog since we started feeding came out fit and fine from the hospital.</h1><br>
+			<h1 class="sectionSubheading text-center">SOS started this programme in July 2009 primarily to help dogs and cats who needed extra care and nutrition to recover from some life threatening conditions that they were in. Isolated dogs suffer from deadly diseases, but with proper care and nutrition they stand a good chance of survival.</h1><br>
 			<h1 class="sectionHeading text-center">Highlights of the Food Pool programme:</h1><br>
 			<h1 class="text">
 				<ul type="none">
@@ -202,7 +203,7 @@
 		</div>
 	</section>
 	<!--Project 2-->
-	<section id="animalStaySection" class="fullscreen">
+	<section id="animalStaySection">
 		<div class="cotainer-fluid">
 			<br>
 			<h1 class="sectionHeading text-center">Animal Stay Programme</h1><br>
@@ -220,7 +221,7 @@
 		</div>
 	</section>
 	<!--Project 3-->
-	<section id="batheADogSection" class="fullscreen">
+	<section id="batheADogSection">
 		<div class="cotainer-fluid">
 			<br>
 			<h1 class="sectionHeading text-center">Bathe a Dog Programme</h1><br>
@@ -228,10 +229,9 @@
 			<h1 class="sectionHeading text-center">Mange - Symptoms and Treatment</h1><br>
 			<h1 class="text">
 				<ul type="none">
-					<li><i class="fa fa-paw"></i> Sarcoptic Mange, also known as Canine Scabies is a highly contagious infestation and the animal needs to be isolated from other animals. It is transferable to humans  and one needs to wash hands with disinfectant after handling the animal. Sarcoptic Mange is curable and the animal needs to undergo a lengthy treatment which includes oral medication and regular medicated baths to combat the infection.</li><br>
-					<li><i class="fa fa-paw"></i> Demodectic mange also known as demodic Demodectic mange also known as demodicosis or red mange, is generally caused if the animal's immune system is compromised due to poor diet and/or illness. It is not contagious to humans and/or other animals. When the puppy is 3 months plus he is vaccinated for Rabies either during the Annual Rabies Drive or individually.</li><br>
+					<li><i class="fa fa-paw"></i> Sarcoptic Mange is a highly contagious infestation and the animal needs to be isolated from other animals. It is also transferable to humans. Sarcoptic Mange is curable and the animal needs to undergo a lengthy treatment which includes oral medication and regular medicated baths to combat the infection.</li><br>
+					<li><i class="fa fa-paw"></i> Demodectic Mange is generally caused if the animal's immune system is compromised due to poor diet and/or illness. It is not contagious to humans and other animals. When the puppy is 3 months plus he is vaccinated for Rabies either during the Annual Rabies Drive or individually.</li><br>
 					<li><i class="fa fa-paw"></i> Symptoms include hairloss, itching, redness, scabbing and sores.</li><br>
-					<li><i class="fa fa-paw"></i> Treatment includes deworming the dog with deworming tablets like Drontal Plus/ Worex administered as per body weight and administering Ivermectin. Ivermectin can be administered orally (Neomec) or by injection under the guidance of a veterinary practitioner. The animal should be put on a balanced diet of adequate proteins and fats. Medicated baths should be given to the dog at regular intervals. Also the dog should be put on liver supplements like Liverolin and immunity builders like Immunol With dedi With dedicated treatment, one can witness positive results in about 4 – 6 weeks. Treatment should always be done under the guidance of a certiﬁed veterinary practitioner.</li><br>
 					<li><i class="fa fa-paw"></i> SOS helps dogs suffering from Mange by giving them a medicated bath and getting the infection treadted by a veterinary practitioner. This is one of the most crucial initiatives to reduce the spread of diseases amongst dogs and improve societal hygiene.</li><br>
 				</ul>
 			</h1>
@@ -252,7 +252,6 @@
 					<li><i class="fa fa-paw"></i> Reduces agression and roaming.</li><br>
 				</ul>
 			</h1>
-			<br>
 		</div>
 	</section>
 	<!--Footer-->
