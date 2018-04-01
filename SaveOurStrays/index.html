@@ -22,17 +22,16 @@
 	  		padding-top: 20px;
 	  	}
 
-		#mainNav {
+	  	#mainNav {
 		  background-color: #212121;
-		}
-
+		}	
 		#mainNav .navbar-brand {
 		  color: white;
 		  font-size: 20px;
 		}
 
 		#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-		  color: #00B8D4;
+		  color: #ffc107;
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link {
@@ -45,13 +44,13 @@
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link.active{
-		  color: #00B8D4;
+		  color: #ffc107;
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link:hover
 		{
-			background-color: #00B8D4;
-			color: white;
+			background-color: #ffc107;
+			color: #212121;
 		}
 		.navbar-toggler-icon
         {
@@ -61,7 +60,6 @@
         {
         	border-color: white;
         }
-
 		.carousel-caption{
 			font-size: 15px; 
 			font-weight: 200;
@@ -77,20 +75,26 @@
 			font-weight: 400;
 			color: white;
 			text-align: center;
-			top: 50%;
+			top: 62%;
 			font-family: 'Courgette', cursive;
 		}
+		.carousel-item
+		{
+			max-height: 750px;/*Resizing carousel for desktops*/
+		}
+
 		}
 		#introSection
 		{
-			background-color: #00B8D4;
+			/*background-color: #FFB300;*/
+			background-color: #ffc107;
 
 		}
 		
 		#introSection .section-heading
 		{
 			color: #212121;
-			font-size: 30px;
+			font-size: 25px;
 			font-weight: bold;	
 			font-family: 'Comfortaa', cursive;
 		}
@@ -98,7 +102,7 @@
 		#introSection .section-subheading
 		{
 			color: white;
-			font-size: 25px;
+			font-size: 20px;
 			font-family: 'Comfortaa', cursive;
 		}
 
@@ -137,7 +141,7 @@
 			font-weight: 200;
 			color: white;
 			text-align: center;
-			top: 50%;
+			top: 60%;
 			font-family: 'Courgette', cursive;
 		}
 		}
@@ -170,7 +174,7 @@
         #contactSection .section-heading
 		{
 			color: #212121;
-			font-size: 30px;
+			font-size: 25px;
 			font-weight: bold;
 			font-family: 'Comfortaa', cursive;
 			
@@ -178,8 +182,8 @@
 
 		#contactSection .section-subheading
 		{
-			color: #00B8D4;
-			font-size: 25px;
+			color: #ffc107;
+			font-size: 20px;
 			font-family: 'Comfortaa', cursive;
 		}
 		#contactSection .text, #contactSection .text a
@@ -225,6 +229,7 @@
 		  -webkit-transition: all 0.3s;
 		  -moz-transition: all 0.3s;
 		  transition: all 0.3s;
+		  background-color: #ffc107;
 		  color: #212121;
 		  border-radius: 100%;
 		  outline: none;
@@ -232,14 +237,14 @@
 		}
 
 		 ul.social-buttons li a:hover {
-		  background-color: #00B8D4;
+		  background-color: #ffc107;
 		}
         </style>
 </head>
 <body>
 	<!--Navigation Bar PERFECT-->
 	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-	<a class="navbar-brand" href="index.html">S&#x2661;S | Save Our Strays</a>
+	<a class="navbar-brand" href="#">S&#x2661;S | Save Our Strays</a>
   	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   	</button>
@@ -249,13 +254,13 @@
 				      <a class="nav-link active" href="index.html">About</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="meetTheTeam.html">Meet the Team</a>
+				      <a class="nav-link" href="#">Meet the Team</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="programmes.html">Programmes</a>
+				      <a class="nav-link" href="progs.html">Programmes</a>
 				    </li>
 				    <li class="nav-item">
-				      <a class="nav-link" href="getInvolved.html">Get involved</a>
+				      <a class="nav-link" href="#">Get involved</a>
 				    </li>
   				</ul>
 		</div>
@@ -270,34 +275,34 @@
 	    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 	    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 	    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-	  </ol>
+	  	</ol>
 	  <div class="carousel-inner">
 	    <div class="carousel-item active">
-	      <img class="d-block w-100" src="img1.jpg" alt="img1">
+	      <img class="d-block w-100" src="image1.jpg" alt="img1">
 		    <div class="carousel-caption">
 			    <p>"Until one has loved an animal a part of one's soul remains unawakened"<p>
 			    <p>-Anatole France</p>
 	  		</div>
 	    </div>
 	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img4.jpeg" alt="img4">
+	      <img class="d-block w-100" src="ed.jpeg" alt="img4">
 	      <div class="carousel-caption">
-			    <p>"When you look into the eyes of an animal you've rescued, you can't help but fall in love"<p>
+	      		<p>"He who feeds a hungry animal feeds his own soul"<p>
+			    <p >-Charlie Chaplin</p>
+	  		</div>
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="pexels-photo-709482.jpeg" alt="img2">
+	      <div class="carousel-caption">
+	      		<p>"When you look into the eyes of an animal you've rescued, you can't help but fall in love"<p>
 			    <p >-Paul Shaffer</p>
 	  		</div>
 	    </div>
 	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img2.jpeg" alt="img2">
+	      <img class="d-block w-100" src="straydogedit.jpg" alt="img3">
 	      <div class="carousel-caption">
 			    <p>"An animal's eyes have the power to speak a great language"<p>
 			    <p>-Martin Buber</p>
-	  		</div>
-	    </div>
-	    <div class="carousel-item">
-	      <img class="d-block w-100" src="img3.jpeg" alt="img3">
-	      <div class="carousel-caption">
-			    <p>"He who feeds a hungry animal feeds his own soul"<p>
-			    <p >-Charlie Chaplin</p>
 	  		</div>
 	    </div>
 	    
@@ -322,7 +327,7 @@
 					<br>
 					<center>
 						<p class="section-heading">Welcome to 'Save Our Strays'<br>
-						<span style="font-size: 25px; font-weight: normal;">Save Our Strays is an animal welfare NGO based in Mumbai</span></p>
+						<span style="font-size: 20px; font-weight: normal;">Save Our Strays is an animal welfare NGO based in Mumbai</span></p>
 		            	<p class="section-subheading">Our Causes</p>
 					</center>
 		        </div>
@@ -395,7 +400,12 @@
 				</div>
 				<div class="col-md-4">
 					<p class="section-subheading">Address</p>	
-					<p class="text">Save Our Strays, 26/101, Garden View Building, Opp.Deep Towers, Off New Link Road, Oshiwara, Andheri (W), Mumbai 400053, India</p>			
+					<p class="text">Save Our Strays,
+					C/o Shirley Menon,
+					204 Khandelwal,
+					17th Road, Khar West,
+					Mumbai 400 053
+					Maharashtra, India</p>			
 				</div>
 				<div class="col-md-4">
 					<p class="section-subheading">Location</p>
