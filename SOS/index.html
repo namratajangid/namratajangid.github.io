@@ -7,6 +7,7 @@
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="navbar.css">
 	<link rel="stylesheet" href="footer.css">
 	
@@ -17,23 +18,31 @@
 	  		padding-top: 50px;
 	  		background-color: #FFC107;
 	  	}
+	  	#programmesSection
+	  	{
+	  		background-color: white;
+	  	}
 	  	.sectionHeading
         {
-        	font-family: 'Montserrat', sans-serif;
-        	font-size: 28px;
-        	font-weight: bold;
-        }
-        .sectionSubHeading
-        {
-        	font-family: 'Montserrat', sans-serif;
-        	font-size: 25px;
+        	font-family: 'Comfortaa', cursive;
+        	font-size: 23px;
         	font-weight: bold;
         }
         .sectionContent
         {
         	font-family: 'Montserrat', sans-serif;
-        	font-size: 18px;
+        	font-size: 19px;
+        	font-weight: bold;
         }
+        a:link, a:visited, a:active 
+        {
+        	color: #FFC107;
+        }
+        a:hover
+        {
+        	color: white;
+        }
+
         .card
         {
         	background-color: #212121;
@@ -116,9 +125,9 @@
 				    <li class="nav-item dropdown">
 				      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Our Programmes</a>
 				      <div class="dropdown-menu">
-				        <a class="dropdown-item" href="ourprogrammes.html">ABC Programme</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Animal Birth Control Programme</a>
 				        <a class="dropdown-item" href="ourprogrammes.html">Vaccination and Rabies Eradication</a>
-				        <a class="dropdown-item" href="ourprogrammes.html">Healthcare</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Healthcare and First Aid</a>
 				        <a class="dropdown-item" href="ourprogrammes.html">Adoptions</a>
 				        <a class="dropdown-item" href="ourprogrammes.html">Food Pool Programme</a>
 				        <a class="dropdown-item" href="ourprogrammes.html">Animal Stay Programme</a>
@@ -192,39 +201,38 @@
 	<section id="introsection">
 		<div class="container-fluid">
 			<br>
-			<h1 class="sectionHeading text-center" style="color: #212121;">Welcome to Save Our Strays</h1>
+			<h1 class="sectionHeading text-center" style="color: #212121;">Save Our Strays is an animal welfare NGO based in Mumbai</h1>
+			<!--Causes-->
 			<br>
-			<h1 class="sectionSubHeading text-center" style="color: #212121;">Save Our Strays is an animal welfare NGO based in Mumbai</h1>
-			<br>
-			<h1 class="sectionSubHeading text-center" style="color: #212121;">OUR CAUSES</h1><br>
+			<h1 class="sectionHeading text-center" style="color: #212121;">OUR CAUSES</h1><br>
 			<!--Card Deck-->
 			<div class="card-deck">
 				<div class="card">
 					<br>
 					<center><img class="card-img-top" src="sterilizationIcon.png"></center>
 					<div class="card-body">
-						<center><h1 class="sectionSubHeading">Sterilization</h1></center>
+						<center><h1 class="sectionContent">Sterilization</h1></center>
 					</div>
 				</div>
 				<div class="card">
 					<br>
 					<center><img class="card-img-top" src="vaccinationIcon.png"></center>
 					<div class="card-body">
-						<center><h1 class="sectionSubHeading">Vaccination</h1></center>
+						<center><h1 class="sectionContent">Vaccination</h1></center>
 					</div>
 				</div>
 				<div class="card">
 					<br>
 					<center><img class="card-img-top" src="healthcareIcon.png"></center>
 					<div class="card-body">
-						<center><h1 class="sectionSubHeading">Animal Healthcare</h1></center>
+						<center><h1 class="sectionContent">Animal Healthcare</h1></center>
 					</div>
 				</div>
 				<div class="card">
 					<br>
 					<center><img class="card-img-top" src="adoptionIcon.png"></center>
 					<div class="card-body">
-						<center><h1 class="sectionSubHeading">Adoptions</h1></center>
+						<center><h1 class="sectionContent">Adoptions</h1></center>
 					</div>
 				</div>
 			</div>
@@ -232,6 +240,45 @@
 		<br>
 	</section>
 
+	<!--programmes and involved-->
+	<section id="programmesSection">
+		 <div class="container-fluid">
+		 	<br>
+		 	<div class="card-deck">
+
+		 			<div class="card">
+
+		 				<div class="card-body text-justify">
+		 					<h1 class="sectionHeading text-center">PROGRAMMES AND INITIATIVES</h1><br>
+		 					<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fa fa-paw"></i> Animal Birth Control</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fa fa-syringe"></i> Vaccination and Rabies Eradication</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fas fa-medkit"></i> Animal Healthcare and First Aid</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fas fa-heart"></i> Adoptions</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fas fa-utensils"></i> Food Pool</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fas fa-home"></i> Animal Stay</h1></a>
+							<a href="ourprogrammes.html"><h1 class="sectionContent"><i class="fas fa-home"></i> Skin Treatment</h1></a>
+						</div>
+						<br>
+					</div>
+		 		
+		 			<div class="card">
+		 				<div class="card-body text-justify">
+		 					<h1 class="sectionHeading text-center">YOUR CONTRIBUTION</h1>
+		 					<br>
+		 					<a href="getinvolved.html#sponsorSection"><h1 class="sectionContent"><i class="fas fa-id-badge"></i> Volunteer</h1></a>
+		 					<br>
+							<a href="getinvolved.html#sponsorSection"><h1 class="sectionContent"><i class="fas fa-money-bill"></i> Sponsor</h1></a>
+							<br>
+							<a href="getinvolved.html#donateSection"><h1 class="sectionContent"><i class="fas fa-hand-holding-heart"></i> Donate in Kind</h1></a>
+							<br>
+							<a href="getinvolved.html#donateSection"><h1 class="sectionContent"><i class="fas fa-hand-holding-usd"></i> Donate in Cash</h1></a>		
+						</div>
+						<br>
+					</div>
+		 	</div>
+		 </div>
+		 <br>
+	</section>
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
