@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>&#x2661; Save Our Strays - Get Involved</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="navbar.css">
+	<link rel="stylesheet" href="footer.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" integrity="sha256-XF29CBwU1MWLaGEnsELogU6Y6rcc5nCkhhx89nFMIDQ=" crossorigin="anonymous"></script>
+	<style type="text/css">
+	  	
+	  	@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Open+Sans');
+	  
+		body
+        {
+        	padding-top: 50px;
+        	background-color: #FFC107;
+        }
+        ul
+        {
+        	padding-left: 0;
+        }
+        .sectionHeading
+        {
+        	font-family: 'Open Sans', sans-serif;
+        	color: #FFC107;
+        	font-size: 24px;
+        }
+        .sectionContent
+        {
+        	font-family: 'Montserrat', sans-serif;
+        	color: #212121;
+        	font-size: 18px;
+        }
+        .card
+        {
+        	background-color: #212121; 
+        }
+    </style>
+</head>
+<body>
+	<!--Navigation Bar-->
+	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+	<a class="navbar-brand" href="index.html">S&#x2661;S | Save Our Strays</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon">
+    	<i class="fa fa-navicon"></i>
+    </span>
+  	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				    <li class="nav-item">
+				      <a class="nav-link" href="index.html">About</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Impact</a>
+				    </li>
+				    <li class="nav-item dropdown">
+				      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Our Programmes</a>
+				      <div class="dropdown-menu">
+				        <a class="dropdown-item" href="ourprogrammes.html">Animal Birth Control Programme</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Vaccination and Rabies Eradication</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Healthcare and First Aid</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Adoptions</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Food Pool Programme</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Animal Stay Programme</a>
+				        <a class="dropdown-item" href="ourprogrammes.html">Skin Treatment Programme</a>
+				      </div>
+				    </li>
+				    <li class="nav-item dropdown">
+				      <a class="nav-link dropdown-toggle" href="getinvolved.html" id="navbardrop" data-toggle="dropdown">Get Involved</a>
+				      <div class="dropdown-menu">
+				        <a class="dropdown-item" href="getinvolved.html#volunteerSection">Volunteer</a>
+				        <a class="dropdown-item" href="getinvolved.html#sponsorSection">Sponsor</a>
+				        <a class="dropdown-item" href="getinvolved.html#donateSection">Donate</a>
+				      </div>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="index.html#reachUsSection">Contact Us</a>
+				    </li>
+  				</ul>
+		</div>
+	</nav>
+
+	<section>
+		<div class="container-fluid">
+			<br><br>
+			<div class="card-deck">
+				<div class="card">
+					<div class="card-body">
+						<center><h1 class="sectionHeading">STERILIZATIONS</h1></center>
+						<br>
+						<div class="container">
+							<canvas id="sChart" height="250" width="100"></canvas>
+						</div>
+				</div>
+				<script>
+
+				Chart.defaults.global.legend.display = false;
+				Chart.defaults.global.defaultFontFamily = "Montserrat";
+				Chart.defaults.global.defaultFontSize = 15;
+				Chart.defaults.global.defaultFontColor = "#FFC107";
+				var ctx = document.getElementById("sChart").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'bar',
+				    data: {
+				        labels: ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+				        datasets: [{
+				            
+				            data: [125, 286, 555, 1003, 1095, 1578, 1680, 1845, 1978, 1645, 1547, 1597, 1920, 1800],
+				            backgroundColor: [
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF'
+				            ],
+				            borderWidth: 1
+				        }]
+				    },
+				    options: { 
+				        legend: {
+				            labels: {
+				                display: false,
+				            }
+				        },
+				        responsive: true,
+    					maintainAspectRatio: false,
+				        scales: {
+				            yAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+				                gridLines: {
+				                	display: false
+				                },
+				                scaleLabel: {
+       								display: true,
+        							labelString: 'No. of Animals Sterilised',
+        						}
+				            }],
+				            xAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+								gridLines: {
+				                	display: false
+				                }
+				            }]
+				        }
+
+				    }
+				});
+			</script>	
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<center><h1 class="sectionHeading">VACCINATIONS</h1></center>
+						<br>
+						<div class="container">
+							<canvas id="vChart" height="250" width="100"></canvas>
+						</div>
+					</div>
+					<script>
+
+				Chart.defaults.global.legend.display = false;
+				Chart.defaults.global.defaultFontFamily = "Montserrat";
+				Chart.defaults.global.defaultFontSize = 15;
+				Chart.defaults.global.defaultFontColor = "#FFC107";
+				var ctx = document.getElementById("vChart").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'bar',
+				    data: {
+				        labels: ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+				        datasets: [{
+				            
+				            data: [250, 425, 750, 1275, 1525, 1850, 2087, 3817, 4012, 5872, 5320, 6952, 8352, 7800],
+				            backgroundColor: [
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF'
+				            ],
+				            borderWidth: 1
+				        }]
+				    },
+				    options: { 
+				        legend: {
+				            labels: {
+				                display: false,
+				            }
+				        },
+				        responsive: true,
+    					maintainAspectRatio: false,
+				        scales: {
+				            yAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+				                gridLines: {
+				                	display: false
+				                },
+				                scaleLabel: {
+       								display: true,
+        							labelString: 'No. of Animals Vaccinated',
+        						}
+				            }],
+				            xAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+								gridLines: {
+				                	display: false
+				                }
+				            }]
+				        }
+
+				    }
+				});
+			</script>	
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container-fluid">
+			<br>
+			<div class="card-deck">
+				<div class="card">
+					<div class="card-body">
+						<center><h1 class="sectionHeading">FIRST AID AND HEALTHCARE</h1></center>
+						<br>
+						<div class="container">
+							<canvas id="fChart" height="250" width="100"></canvas>
+						</div>
+				</div>
+				<script>
+
+				Chart.defaults.global.legend.display = false;
+				Chart.defaults.global.defaultFontFamily = "Montserrat";
+				Chart.defaults.global.defaultFontSize = 15;
+				Chart.defaults.global.defaultFontColor = "#FFC107";
+				var ctx = document.getElementById("fChart").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'bar',
+				    data: {
+				        labels: ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+				        datasets: [{
+				        	data: [250, 750, 1500, 1785, 1498, 1250, 1375, 1552, 1817, 2365, 2876, 3752, 2864, 2900],
+				            backgroundColor: [
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF'
+				            ],
+				            borderWidth: 1
+				        }]
+				    },
+				    options: { 
+				        legend: {
+				            labels: {
+				                display: false,
+				            }
+				        },
+				        responsive: true,
+    					maintainAspectRatio: false,
+				        scales: {
+				            yAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+				                gridLines: {
+				                	display: false
+				                },
+				                scaleLabel: {
+       								display: true,
+        							labelString: 'No. of Animals Medicated',
+        						}
+				            }],
+				            xAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+								gridLines: {
+				                	display: false
+				                }
+				            }]
+				        }
+
+				    }
+				});
+			</script>	
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<center><h1 class="sectionHeading">ADOPTIONS</h1></center>
+						<br>
+						<div class="container">
+							<canvas id="aChart" height="250" width="100"></canvas>
+						</div>
+					</div>
+					<script>
+
+				Chart.defaults.global.legend.display = false;
+				Chart.defaults.global.defaultFontFamily = "Montserrat";
+				Chart.defaults.global.defaultFontSize = 15;
+				Chart.defaults.global.defaultFontColor = "#FFC107";
+				var ctx = document.getElementById("aChart").getContext('2d');
+				var myChart = new Chart(ctx, {
+				    type: 'bar',
+				    data: {
+				        labels: ["2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017"],
+				        datasets: [{
+				            
+				            data: [25, 75, 36,42,78,46,49,69,114,132,96,157,128,100],
+				            backgroundColor: [
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF',
+				                '#FFFFFF'
+				            ],
+				            borderWidth: 1
+				        }]
+				    },
+				    options: { 
+				        legend: {
+				            labels: {
+				                display: false,
+				            }
+				        },
+				        responsive: true,
+    					maintainAspectRatio: false,
+				        scales: {
+				            yAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+				                gridLines: {
+				                	display: false
+				                },
+				                scaleLabel: {
+       								display: true,
+        							labelString: 'No. of Animals Adopted',
+        						}
+				            }],
+				            xAxes: [{
+				                ticks: {
+				                    beginAtZero: true
+				                },
+								gridLines: {
+				                	display: false
+				                }
+				            }]
+				        }
+
+				    }
+				});
+			</script>	
+				</div>
+			</div>
+		</div>
+		<br>
+	</section>
+		<!--Footer-->
+	<footer id="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; S&#x2661;S 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/saveourstraysmum" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.instagram.com/save_our_strays_/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                Designed by NamrataJ
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
+</body>
+</html>
