@@ -1,0 +1,28 @@
+diego - puppy
+isabella - puppy 
+leo - cat
+donny - dog
+Felix 
+Blossom 
+Leo
+Annie
+
+
+Success stories: 
+
+Dogs: 
+Donny : content
+Diego : content
+Bindu : Before pic and content
+
+Cats
+Mikey : content
+Moti : content
+
+index
+
+Diego : 1024X786
+Bindu : 1024X786
+Donny : 1600X1200, 612X816
+Mikey : 601X768
+Moti : 1215X1112
