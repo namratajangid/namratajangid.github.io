@@ -1,0 +1,4 @@
+Images are not optimised. 
+Google analytics code is not added.
+Favicon not added. 
+Rest everyhting working fine.
