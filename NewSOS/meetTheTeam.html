@@ -14,7 +14,6 @@
 	<style type="text/css">
 	  	
 	  	@import url('https://fonts.googleapis.com/css?family=Comfortaa|Montserrat|Open+Sans');
-	  	@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 		body
         {
         	padding-top: 50px;
@@ -36,10 +35,19 @@
         	color: #212121;
         	font-size: 18px;
         }
-                .imgText{
+        .imgText{
         	font-family: 'Gloria Hallelujah', cursive;
         	color: #FFC107;
         	font-size: 19px;
+        }
+        a:link, a:visited, a:active {
+        	color: #FFC107;
+        	text-decoration: none;
+        }
+        a:hover
+        {
+        	color: white;
+        	text-decoration: none;
         }
     </style>
 </head>
@@ -54,22 +62,16 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav ml-auto">
 				    <li class="nav-item">
+				      <a class="nav-link" href="#">About</a>
+				    </li>
+				    <li class="nav-item">
 				      <a class="nav-link" href="impact.html">Impact</a>
 				    </li>
 				    <li class="nav-item">
 				      <a class="nav-link" href="successstories.html">Success Stories</a>
 				    </li>
 				    <li class="nav-item dropdown">
-				      <a class="nav-link dropdown-toggle" href="meetTheTeam.html" id="navbardrop" data-toggle="dropdown">Meet the Team</a>
-				      <div class="dropdown-menu">
-				        <a class="dropdown-item" href="meetTheTeam.html">Journey from Zero to Hero</a>
-				        <a class="dropdown-item" href="meetTheTeam.html#vareSection">Trustees</a>
-				        <a class="dropdown-item" href="meetTheTeam.html#hafdSection">Volunteers</a>
-				        <a class="dropdown-item" href="meetTheTeam.html#adoptionSection">Meetings</a>
-				      </div>
-				    </li>
-				    <li class="nav-item dropdown">
-				      <a class="nav-link dropdown-toggle" href="ourprogrammes.html" id="navbardrop" data-toggle="dropdown">Our Programmes</a>
+				      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Our Programmes</a>
 				      <div class="dropdown-menu">
 				        <a class="dropdown-item" href="ourprogrammes.html#sterilizationSection">Animal Birth Control Programme</a>
 				        <a class="dropdown-item" href="ourprogrammes.html#vareSection">Vaccination and Rabies Eradication</a>
@@ -88,15 +90,21 @@
 				        <a class="dropdown-item" href="getinvolved.html#donateSection">Donate</a>
 				      </div>
 				    </li>
+				    <li class="nav-item dropdown">
+				      <a class="nav-link dropdown-toggle" href="getinvolved.html" id="navbardrop" data-toggle="dropdown">Meet The Team</a>
+				      <div class="dropdown-menu">
+				      	<a class="dropdown-item" href="meetTheTeam.html">Journey from Zero to Hero</a>
+				        <a class="dropdown-item" href="trustees.html">Our Trustees</a>
+				        <a class="dropdown-item" href="volunteers.html">Our Volunteers</a>
+				        <a class="dropdown-item" href="meetTheTeam.html">Our Meetings</a>
+				      </div>
+				    </li>
 				    <li class="nav-item">
 				      <a class="nav-link" href="index.html#reachUsSection">Contact Us</a>
 				    </li>
   				</ul>
 		</div>
-	</nav>
-
-	<!--Journey from zero to Hero-->
-	<div class="container" id="journeySection">
+	</nav>	<div class="container" id="journeySection">
 		<br><br>
 		<div class="card" style="background-color: white">
 			<div class="card-body">
@@ -114,58 +122,64 @@
 			</div>
 	</div>
 	<br>
-	</div>
-	<!--Trustees-->	
-	<section id="trusteesSection">
-		<div class="container">
-			<div class="card">
-				<div class="card-body">
-					<h1 class="sectionHeading text-center">SOS Trustees</h1>
-					
-					<div class="container-fluid">
-						<!--Shirley-->
-						<div class="row">
-							<div class="col-md-3">
-								<div class="card" style="background-color: #212121;">
-									<img class="card-img-top" src="shirley.png" alt="Shirley Menon Advani - SOS Founder">
-									<h1 class="imgText text-center">Shirley Menon Advani</h1><br>
-								</div>
-							</div>
-							<div class="col-md-9">
-								<h1 class="sectionContent">
-									<br><br>
-									She comes from an animal loving middle class family, with a background in the service industry. Shirley quit her full time job to dedicate more time to SOS. 
-									<br><br>
-									Her main aim in life is to see animals and humans living in harmony. She knows that most people may not be able to change the world, but she believes that each one of us can make a difference in our lifetime by doing our bit.
-								</h1>
-							</div>
-						</div>
-						<br><br>
-						<!--Namrata-->
-						<div class="row">
-							<div class="col-md-3">
-								<div class="card" style="background-color: #212121;">
-									<img class="card-img-top" src="shirley.png" alt="Shirley Menon Advani - SOS Founder">
-									<h1 class="imgText text-center">Shirley Menon Advani</h1><br>
-								</div>
-							</div>
-							<div class="col-md-9">
-								<h1 class="sectionContent">
-									<br><br>
-									She comes from an animal loving middle class family, with a background in the service industry. Shirley quit her full time job to dedicate more time to SOS. 
-									<br><br>
-									Her main aim in life is to see animals and humans living in harmony. She knows that most people may not be able to change the world, but she believes that each one of us can make a difference in our lifetime by doing our bit.
-								</h1>
-							</div>
-						</div>
-					
-					    </div>	
-				</div>
-			</div>
-			<br>
-		</div>
-	</section>
+	<!--Menu Section-->
+	<section id="MenuSection">
+		 <div class="container-fluid">
+		 	<br>
+		 	<div class="card-deck">
 
+		 			<div class="card" style="background-color: #212121">
+
+		 				<div class="card-body text-justify">
+		 					<center>
+		 					<a href="trustees.html">
+		 					<h1 class="sectionHeading">
+							Our Trustees
+		 					<br>
+							<i class="fas fa-users" style="c"></i>
+							</h1>
+							</a>
+							</center>
+						</div>
+						<br>
+					</div>
+
+		 			<div class="card" style="background-color: #212121">
+
+		 				<div class="card-body text-justify">
+		 					<center>
+		 					<a href="volunteers.html">
+		 					<h1 class="sectionHeading">
+							Our Volunteers
+		 					<br>
+							<i class="fas fa-users" style="c"></i>
+							</h1>
+							</a>
+							</center>
+						</div>
+						<br>
+					</div>
+
+					<div class="card" style="background-color: #212121">
+
+		 				<div class="card-body text-justify">
+		 					<center>
+		 					<a href="meetings.html">
+		 					<h1 class="sectionHeading">
+							Our Meetings
+		 					<br>
+							<i class="fas fa-users" style="c"></i>
+							</h1>
+							</a>
+							</center>
+						</div>
+						<br>
+					</div>
+		 	</div>
+		 </div>
+		 <br>
+	</section>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>	
