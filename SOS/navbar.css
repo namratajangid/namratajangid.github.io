@@ -3,7 +3,7 @@
 		}	
 		#mainNav .navbar-brand {
 		  color: white;
-		  font-size: 20px;
+		  font-size: 18px;
 		}
 
 		#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
@@ -11,7 +11,7 @@
 		}
 
 		#mainNav .navbar-nav  .nav-item .nav-link {
-		  font-size: 18px;
+		  font-size: 16px;
 		  font-weight: 400;
 		  padding: 0.75em;
 		  letter-spacing: 1px;
@@ -39,7 +39,7 @@
 		.navbar .dropdown-menu .dropdown-item{
 			color: white;
   			font-family: 'Comfortaa', cursive;
-  			font-size: 16px;
+  			font-size: 14px;
 		}
 
 		.navbar .dropdown-menu .dropdown-item:hover{
